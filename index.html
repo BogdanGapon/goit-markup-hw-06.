@@ -436,20 +436,34 @@
         <b class="title-modal-form">Оставьте свои данные, мы вам перезвоним</b>
         <form name="modal-form">
           <label class="modal-form-label" for="user-name">Имя</label>
-          <input
-            type="text"
-            class="modal-form-input user-form"
-            name="user_name"
-            id="user-name"
-            required
-          />
-
+          <span class="icon-wrapper">
+            <input
+              type="text"
+              class="modal-form-input input-form"
+              name="user_name"
+              s
+              id="user-name"
+              required
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-man"></use>
+            </svg>
+          </span>
           <label class="modal-form-label">Телефон</label>
-          <input name="user-phone" type="tel" class="modal-form-input" required />
+          <span class="icon-wrapper">
+            <input name="user-phone" type="tel" class="modal-form-input input-form" required />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#telefone-form-icon"></use>
+            </svg>
+          </span>
 
           <label class="modal-form-label">Почта </label>
-          <input name="user-mail" type="email" class="modal-form-input" />
-
+          <span class="icon-wrapper">
+            <input name="user-mail" type="email" class="modal-form-input input-form" />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#mail-form-icon"></use>
+            </svg>
+          </span>
           <label for="user-message" class="modal-form-label">Комментарий</label>
           <textarea
             name="user-message"
