@@ -343,6 +343,8 @@
 
       <!-- SECTION CLIENTS END-->
     </main>
+
+    <!-- FOOTER START -->
     <footer class="footer">
       <div class="container footer-flex-container">
         <div class="link-wrapper">
@@ -401,8 +403,29 @@
             </li>
           </ul>
         </div>
+        <form name="footer-form" autocomplete="on">
+          <label for="footer-mail" class="contact-form-mail-label">Подпишитесь на рассылку</label>
+          <input
+            type="email"
+            name="user-mail-footer"
+            class="contact-form-mail"
+            id="footer-mail"
+            placeholder="E-mail"
+            required
+          />
+          <button type="submit" class="contact-form-submit-button">
+            Подписаться
+            <svg class="btn-footer-icon" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#btn-telegram-icon"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
+
+    <!-- FOOTER END -->
+
+    <!-- BACKDROP START -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-modal" type="button" data-modal-close>
@@ -410,8 +433,46 @@
             <use href="./images/symbol-defs.svg#close-icon"></use>
           </svg>
         </button>
+        <b class="title-modal-form">Оставьте свои данные, мы вам перезвоним</b>
+        <form name="modal-form">
+          <label class="modal-form-label" for="user-name">Имя</label>
+          <input
+            type="text"
+            class="modal-form-input user-form"
+            name="user_name"
+            id="user-name"
+            required
+          />
+
+          <label class="modal-form-label">Телефон</label>
+          <input name="user-phone" type="tel" class="modal-form-input" required />
+
+          <label class="modal-form-label">Почта </label>
+          <input name="user-mail" type="email" class="modal-form-input" />
+
+          <label for="" class="modal-form-label">Комментарий</label>
+          <textarea
+            name="user-message"
+            class="modal-form-input textarea-form"
+            placeholder="Введите текст"
+          ></textarea>
+          <div class="checkbox-modal-wrapper">
+            <input
+              type="checkbox"
+              id="user-policy"
+              name="user-policy"
+              class="visually-hidden modal-form-checkbox"
+            />
+            <label for="user-policy" class="modal-form-checkbox-label"
+              >Соглашаюсь с рассылкой и принимаю &nbsp;
+              <a href="" class="modal-link-policy"> Условия договора</a>
+            </label>
+          </div>
+          <button class="modal-form-button">Отправить</button>
+        </form>
       </div>
     </div>
+    <!-- BACKDROP EMD -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
